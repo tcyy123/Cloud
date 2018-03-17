@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;  
 import java.util.Scanner;  
   
-public class experiment1 {  
+public class TaskSchedule {  
     public static void main(String[] args) {  
     	int Total_MIPS = 0;	//Total MIPS of all VMs
     	int Total_Task = 0;	//Total MIPS of all Tasks
@@ -176,36 +176,4 @@ public class experiment1 {
             array[j] = target;  
         }  
     }  
-}  
-
-//Task Class  
-class ProcessTask {  
-    public double ArrivalTime;   
-    public String pid;  
-    public int mips;
-    public double ExeTime;	//execution time
-    public double PriceTotal; // total price of each Task
-      
-    ProcessTask(double x,int m, String id) {
-        ArrivalTime = x;
-        mips = m;
-        pid = id;
-    }  
-} 
-// VM Class 
-class ProcessVm {
-    public int Core;
-    public int MipsVm;
-    public String Id;
-    public int TotalMips;
-    public double PF;			//Power factor
-    public double Allotment;	
-    public double Price;		// Price of each core
-    public double Total_time = 0;	// total time each VM execute tasks
-   
-    ProcessVm(int c, int m, String id) {
-    	Core = c;
-    	MipsVm = m;	
-    	Id = id;
-    }
 }  
